@@ -120,7 +120,7 @@ static const float headroom = powf(10.0f, -HEADROOM_DECIBEL * 0.025f);
         player->pause(0, 0);
         [output stop];
         output = nil;
-        free(player);
+        delete player;
         player    = NULL;
         _delegate = nil;
     }
