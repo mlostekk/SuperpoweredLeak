@@ -29,11 +29,23 @@
                                     <action selector="onLoadPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ox-Qh-GKS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1m-kl-wEP" userLabel="Reload">
+                                <rect key="frame" x="123.5" y="368" width="128" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <state key="normal" title="reload">
+                                    <color key="titleColor" red="0.24560546875" green="0.61271158854166663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onReloadPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3a-Ri-RyH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YJR-2S-Xon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bmp-O3-lRf"/>
+                            <constraint firstItem="q1m-kl-wEP" firstAttribute="top" secondItem="YJR-2S-Xon" secondAttribute="bottom" id="Myp-Ug-mBQ"/>
                             <constraint firstItem="YJR-2S-Xon" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QzU-F8-eIB"/>
+                            <constraint firstItem="q1m-kl-wEP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S7P-e6-nQ8"/>
                         </constraints>
                     </view>
                     <connections>

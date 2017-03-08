@@ -33,6 +33,19 @@
 
     /****************************************************************************************************************************
      */
+    - (IBAction)onReloadPressed
+    {
+        _playButton.enabled = false;
+        if(audioPlayer == nil)
+        {
+            audioPlayer = [[AudioPlayer alloc] init];
+            audioPlayer.delegate = self;
+        }
+        [audioPlayer load:[[NSBundle mainBundle] pathForResource:@"strong-the-root" ofType:@"mp3"]];
+    }
+
+    /****************************************************************************************************************************
+     */
     - (void)onTrackLoaded
     {
         [[NSOperationQueue mainQueue] addOperationWithBlock:^
